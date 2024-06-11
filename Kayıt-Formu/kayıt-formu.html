@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+</head>
+<body>
+    <h2>Kayıt Formu</h2> 
+
+    <form action="./forms.html" method="get">
+        <!-- isim-soyisim girişi -->
+        <label for="firstname">Ad:</label>
+        <br>
+        <input type="text" id="firstname" name="firstname" required>
+        <br>
+      
+        <label for="lastname">Soyad:</label>
+        <br>
+        <input type="text" id="lastname" name="lastname" required>
+        <br>
+      
+        <!-- Email girişi -->
+        <label for="email">E-posta:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br>
+      
+        <!-- Password girişi -->
+        <label for="password">Şifre:</label>
+        <br>
+        <input type="password" id="password" name="password" minlength="12" required>
+        <br>
+
+        <!-- Cinsiyet girişi -->
+        <p>Cinsiyet:</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Erkek</label>
+        <br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Kadın</label>
+        <br>
+
+        <!-- Favori meyve girişi -->
+        <label for="Fruit">Meyve:</label>
+        <br>
+        <select id="Fruit" name="Fruit">
+        <option value="elma">Elma</option>
+        <option value="armut">Armut</option>
+        <option value="kiraz">Kiraz</option>
+        <option value="çilek">Çilek</option>
+        <option value="vişne">Vişne</option>
+        <option value="erik">Erik</option>
+        </select>
+        <br>
+
+        <!-- Mesaj girişi -->
+       <label for="message">Mesaj:</label><br>
+       <textarea id="message" name="message" rows="8" cols="60"></textarea>
+       <br>
+
+         <!-- Gönder Butonu -->
+  <input type="submit" value="Gönder">
+        </form>
+
+</body>
+</html>
