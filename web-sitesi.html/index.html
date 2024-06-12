@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: rgb(248, 250, 140);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 2rem;
+}
+
+#menu-check {
+  display: none;
+}
+
+.menu-links {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 120%;
+
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  list-style-type: none;
+  text-align: left;
+}
+.menu-links li {
+  padding: 0.5rem 1rem;
+}
+#menu-check:checked + .menu-links {
+  display: block;
+}
+
+@media only screen and (min-width: 900px) {
+  label {
+    display: none;
+  }
+  .menu-links {
+    display: flex;
+    position: inherit;
+    background: none;
+  }
+}
+</style>
+<body>
+    <!--bir nav menüsü oluşturuldu-->
+    <nav>
+        <div class="logo" style="font-size: large;">Decoration</div>
+        <div class="ana-menu">
+            <label for="menu-check">MENU</label>
+            <input type="checkbox" id="menu-check" />
+            <ul class="menu-links">
+                <li><a href="./index.html">ANA SAYFA</a></li>
+                <li><a href="./servisler.html">SERVİSLER</a></li>
+                <li><a href="./hakkında.html">HAKKINDA</a></li>
+                <li><a href="./iletisim.html">İLETİŞİM</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <label for="menu-check">MENU</label>
+    <!--gerekli açıklamalar yapıldı-->
+    <h1>Sizi En İyi Yansıtacak Ev Dekorasyonlarina</h1>
+    <p>
+        hayalinizi kurduğunuz sizi temsil eden en şık dekorasyondaki mobilyalar ve tasarım gücü ile tüm modern dokunuşların birleştiği doğru adrestesiniz, tasarım anlamında sonsuza uzanan ürün renk doku skalası ile 
+        her çeşit mobilya tasarımı yapılmaktadır.
+    </p>
+    <br>
+    <h2>Örnek Tasarım</h2>
+    <img src="./img.jfif" alt="Örnek tasarım">
+
+    <h2>Günümüz popüler Dokunusları</h2>
+    <ul>
+        <li>koyu ahşap</li>
+        <li>koyu renk duvar ve zemin dösemeleri</li>
+        <li>sert kumaslar</li>
+    </ul>
+
+   
+</body>
+</html>

@@ -31,3 +31,6 @@ This project includes our CV, projects completed, a visual of ourselves and link
 In this project, a blog page of our own was created, 
 articles were written about topics related to home decoration, communication with children in child development, ways to access correct information, 
 visuals were added and the necessary resources were used.
+
+# Website Construction
+In this project, a website was created, a navigation menu was created on this website, and the homepage, about services and contact page were created separately.

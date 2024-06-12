@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servisler</title>
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: rgb(248, 250, 140);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 2rem;
+}
+
+#menu-check {
+  display: none;
+}
+
+.menu-links {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 120%;
+
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  list-style-type: none;
+  text-align: left;
+}
+.menu-links li {
+  padding: 0.5rem 1rem;
+}
+#menu-check:checked + .menu-links {
+  display: block;
+}
+
+@media only screen and (min-width: 900px) {
+  label {
+    display: none;
+  }
+  .menu-links {
+    display: flex;
+    position: inherit;
+    background: none;
+  }
+}
+ul{
+    padding-left: 1cm;
+}
+h1{
+    color: rgb(226, 226, 133);
+}
+
+</style>
+<body>
+    <!--bir nav menüsü oluşturuldu-->
+    <nav>
+        <div class="logo" style="font-size: large;">Decoration</div>
+        <div class="ana-menu">
+            <label for="menu-check">MENU</label>
+            <input type="checkbox" id="menu-check" />
+            <ul class="menu-links">
+                <li><a href="./index.html">ANA SAYFA</a></li>
+                <li><a href="./servisler.html">SERVİSLER</a></li>
+                <li><a href="./hakkında.html">HAKKINDA</a></li>
+                <li><a href="./iletisim.html">İLETİŞİM</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <label for="menu-check">MENU</label>
+    <br>
+<!--gerekli açıklamalar yapıldı-->
+    <h1>Sunulan Hizmetler</h1>
+
+    <h2>Mobilya Malzemesi ve Şekli</h2>
+    <p>mobilyalarınızı tamamen sıfırdan tasarlayıp evinize uygun hazırlıyoruz</p>
+    <br>
+
+    <h2>Mobilya Rengi</h2>
+    <p>mobilya renklerini belirliyoruz</p>
+    <br>
+
+    <h2>Duvar Boyası ve Zemin</h2>
+    <p>duvar boyası ve zemin döşemesine karar veriyoruz</p>
+    <br>
+
+    <h2>Obje Seçimi</h2>
+    <p>son olarak tüm küçük detayları da özel olarak seçiyoruz</p>
+    <br>
+
+    <ul>
+        <li>Mobilya renk seçimi</li>
+        <li>Mobilya malzeme seçimi</li>
+        <li>Duvar boyası seçimi</li>
+        <li>Zemin seçimi</li>
+        <li>Obje seçimleri</li>
+    </ul>
+</body>
+</html>

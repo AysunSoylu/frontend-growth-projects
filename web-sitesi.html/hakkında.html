@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkında</title>
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: rgb(248, 250, 140);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 2rem;
+}
+
+#menu-check {
+  display: none;
+}
+
+.menu-links {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 120%;
+
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  list-style-type: none;
+  text-align: left;
+}
+.menu-links li {
+  padding: 0.5rem 1rem;
+}
+#menu-check:checked + .menu-links {
+  display: block;
+}
+
+@media only screen and (min-width: 900px) {
+  label {
+    display: none;
+  }
+  .menu-links {
+    display: flex;
+    position: inherit;
+    background: none;
+  }
+}
+h2{
+    font-size: medium;
+    font-style: italic;
+    
+}
+
+h1{
+    color: rgb(207, 233, 115);
+}
+ol{
+    padding-left: 1cm;
+}
+</style>
+<body>
+    <!--bir nav menüsü oluşturuldu-->
+    <nav>
+        <div class="logo" style="font-size: large;">Decoration</div>
+        <div class="ana-menu">
+            <label for="menu-check">MENU</label>
+            <input type="checkbox" id="menu-check" />
+            <ul class="menu-links">
+                <li><a href="./index.html">ANA SAYFA</a></li>
+                <li><a href="./servisler.html">SERVİSLER</a></li>
+                <li><a href="./hakkında.html">HAKKINDA</a></li>
+                <li><a href="./iletisim.html">İLETİŞİM</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <label for="menu-check">MENU</label>
+<!--bilgilendirme yazısı yazıldı-->
+    <h1>Hayalindeki Dekorasyona Ulaşmak İstiyorsan Doğru Adrestesin</h1>
+    <h2>
+        Şirketimiz dekorasyon şirketi olmakla beraber sizinle özel olarak çalışıp hayalinizdeki dekorasyona kavuşmanıza rehberlik sağlıyoruz tamamen profesyonel çalışanlarımız ile hizmet verip bu süreçte siz müşterilerimizin her türlü isteklerini sağlamaktayız.
+    </h2>
+    <br>
+
+    <div>
+        <h2>Avantajlarımız</h2>
+    <ol>
+        <li>Türkiye de toplam 81 ile hizmet sağlıyoruz</li>
+        <li>Her türlü taksit imkanına sahibiz</li>
+        <li>Türkiyenin dekorasyondaki mobilyada ki en büyük renk skalasına sahip dekorasyon şirketiyiz</li>
+        <li>Memnun kalmadığınız her türlü dekorasyon için ücret iadesi sağlamaktayız</li>
+    </ol>
+
+</div>
+</body>
+</html>
