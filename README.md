@@ -26,3 +26,8 @@ in this project
 
 #Creating a Web Page
 This project includes our CV, projects completed, a visual of ourselves and links to our social media profiles.
+
+# Blog Page Created
+In this project, a blog page of our own was created, 
+articles were written about topics related to home decoration, communication with children in child development, ways to access correct information, 
+visuals were added and the necessary resources were used.
