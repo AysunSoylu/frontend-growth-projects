@@ -34,3 +34,6 @@ visuals were added and the necessary resources were used.
 
 # Website Construction
 In this project, a website was created, a navigation menu was created on this website, and the homepage, about services and contact page were created separately.
+
+# Blog Site Design
+A blog site was designed, blog posts about decoration were included on this site, CSS was used and images related to the subject were added.
