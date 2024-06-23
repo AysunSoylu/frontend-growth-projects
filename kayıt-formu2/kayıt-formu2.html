@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="signup-form">
+       
+        <h1 id="title">Kayıt Formu</h1>
+   
+        <p id="description">Aşağıdaki formu doldurarak kayıt olabilirsiniz</p>
+        <form id="survey-form">
+            <!-- isim alanı açıldı -->
+            <label id="name-label" for="name">İsim:</label>
+            <input id="name" name="name" type="text" placeholder="İsminizi giriniz" required class="txt">
+             <!-- mail alanı açıldı -->
+            <label id="email-label" for="email">E-posta:</label>
+            <input id="email" name="email" type="email" placeholder="E-posta adresinizi giriniz" required class="txt">
+             <!-- yaş alanı açıldı -->
+            <label id="number-label" for="number">Yaş:</label>
+            <input id="number" name="age" type="number" placeholder="Yaşınızı giriniz" min="1" max="120" required class="txt">
+            <!-- cinsiyet alanı açıldı -->
+            <div class="form-group">
+                <div class="form-item">
+                    <label for="dropdown">Cinsiyet:</label>
+                    <select id="dropdown" name="gender" required class="txt">
+                        <option value="">Seçiniz</option>
+                        <option value="male">Erkek</option>
+                        <option value="female">Kadın</option>
+                        <option value="other">Diğer</option>
+                    </select>
+                </div>
+                <!-- medeni durum alanı açıldı -->
+                <div class="form-item">
+                    <label>Medeni Durum:</label>
+                    <input type="radio" id="single" name="marital_status" value="single" required>
+                    <label for="single">Bekar</label>
+                    <input type="radio" id="married" name="marital_status" value="married">
+                    <label for="married">Evli</label>
+                </div>
+            </div>
+             <!-- ilgi alanları alanı açıldı -->
+            <div class="form-group">
+                <div class="form-item">
+                    <label>İlgi Alanları:</label>
+                    <input type="checkbox" id="sport" name="interests" value="sport">
+                    <label for="sport">Fotoğraf Çekimi</label>
+                </div>
+                <div class="form-item">
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">Müzik</label>
+                </div>
+                <div class="form-item">
+                    <input type="checkbox" id="reading" name="interests" value="reading">
+                    <label for="reading">Yürüyüş</label>
+                </div>
+            </div>
+            <!-- yorum alanı açıldı -->
+            <label for="comments">Ek Yorumlar:</label>
+            <textarea id="comments" name="comments" placeholder="Yorumlarınızı ekleyebilirsiniz"></textarea>
+            <!-- gönder alanı açıldı -->
+            <input id="submit" type="submit" value="Gönder" class="signup-btn">
+            
+        </form>
+    </div>
+</body>
+</html>
