@@ -1,0 +1,2 @@
+# Web Sitesi
+A website describing the life and works of our author named Necip Fazıl Kısakürek was designed, visuals related to the content were added and necessary arrangements were made on separate pages.

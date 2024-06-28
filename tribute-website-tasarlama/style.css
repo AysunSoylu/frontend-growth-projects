@@ -1,0 +1,163 @@
+:root{
+    --primary-color: rgb(135, 141, 132);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    color: rgb(7, 7, 7);
+    background: url(./arkaplan.img);
+    
+}
+p{
+    color: bisque;
+}
+
+.section {
+    padding: 8rem 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.section.white {
+    background-color: rgb(250, 186, 66);
+}
+
+.section-title {
+    font-size: 35px;
+    letter-spacing: .5px;
+    line-height: 1;
+
+}
+
+.button {
+    min-width: 140px;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 38px;
+    padding: 0 24px;
+    text-align: center;
+    background-color: black;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: var(--primary-color);
+}
+
+a.button {
+    text-decoration: none;
+}
+
+button.button {
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+}
+
+/* Header */
+
+#header {
+    position: relative;
+    padding: 32px 0;
+    background-color: rgb(236, 184, 72);
+}
+
+#header .logo {
+    display: block;
+}
+
+#nav {
+    display: flex;
+    gap: 0 32px;
+    justify-content: end;
+    align-items: center;
+}
+
+#nav .nav-item {
+    color: black;
+    padding: 2px;
+    text-decoration: none;
+}
+
+#nav .nav-item:hover {
+    text-decoration: line-through;
+}
+
+/* hero */
+.hero-caption {
+    max-width: 585px;
+    padding: 32px;
+    margin-left: auto;
+    background-color: antiquewhite;
+}
+
+.hero-caption h1 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.hero-caption p {
+    font-size: 20px;
+    margin: 1.5em 0;
+    color: rgb(247, 6, 6);
+
+}
+
+.hero-image {
+    width: 70%;
+    height: 70%;
+    display: block;
+
+}
+
+/* blog */
+
+.blog {
+    margin-top: -100px;
+    background-color: rgb(248, 232, 143);
+}
+
+.blog-content {
+    padding: 24px;
+    
+}
+
+.blog img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+    
+
+
+.books-title {
+    background-color: rgb(235, 175, 107);
+    margin-bottom: 100px;
+    text-align: center;
+   
+}
+
+.blog p {
+    color: black;
+}
+
+#footer {
+    padding: 16px 0;
+    text-align: center;
+    background-color: brown;
+
+}
+
+
+
+
+
