@@ -1,0 +1,47 @@
+::placeholder {
+    
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    background-position: 40%;
+    background-size: 6%;
+    background: url('./assets/search-solid.svg') no-repeat;
+  
+}
+
+
+
+input.empty {
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+text-decoration: inherit;
+background-color: #fafafa;
+
+}
+
+.postuserfont {
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 15px;
+color: black;
+}
+
+.storytext {
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 12px;
+color: black;
+}
+
+.rightpanellinks {
+text-decoration: none;
+color: lightgrey;
+}
+
+.rightpanellinks:hover {
+text-decoration: none;
+color: lightgrey;
+}
+
+.body {
+background-color: #fff;
+}
