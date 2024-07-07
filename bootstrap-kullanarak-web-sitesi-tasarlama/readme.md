@@ -1,0 +1,2 @@
+# BOOTSTRAP İLE GELİŞTİRİLMİŞ BLOG SAYFASI
+Bu proje bootstrap kullanılark hazırlanmış bir blog sayfasıdır, blogun içerisinde modern tasarım ve rustik tasarım olmak üzere iki farklı konu vardır ana sayfa ile birlikte üç ayrı sayfa çalışmaktadır.

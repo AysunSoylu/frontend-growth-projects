@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Clone</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .profile-sidebar {
+      position: sticky;
+      top: 20px;
+    }
+    .card-body img {
+      max-width: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .card-body .post-header {
+      display: flex;
+      align-items: center;
+    }
+    .feed-card {
+      margin-bottom: 20px;
+    }
+    .navbar {
+      background-color: #0077b5;
+    }
+    .navbar-brand {
+      color: #fff;
+    }
+    .post-img {
+      max-width: 100%;
+      height: 50%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">LinkedIn</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-user-friends"></i> Network</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-briefcase"></i> Jobs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-comment-dots"></i> Messaging</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-bell"></i> Notifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-user-circle"></i> Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Left Sidebar -->
+      <div class="col-md-3 profile-sidebar">
+        <div class="card">
+          <img src="./arkaplan.img" class="card-img-top" alt="Cover Photo">
+          <div class="card-body text-center">
+            <img src="./hakan.img" alt="Profile Picture">
+            <h5 class="card-title">Kerem Muradalan</h5>
+            <p class="card-text">Software Engineer at Example Inc.</p>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <div class="card-body">
+            <h5 class="card-title">Related Fields</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Software engineering</a></li>
+              <li><a href="#">Software engineering</a></li>
+              <li><a href="#">Information and document management</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-md-6">
+        <!-- Post Form -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Start a post" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Post</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Feed -->
+        <div class="feed-card card">
+          <div class="card-body">
+            <div class="post-header">
+              <img src="./Aslı.img" alt="Profile Picture">
+              <div>
+                <h5 class="card-title">Aslı Susuz</h5>
+                <p class="card-text"><small class="text-muted">2h ago</small></p>
+              </div>
+            </div>
+            <p class="card-text">This is an example post on LinkedIn.</p>
+           
+            <div class="post-actions mt-3">
+              <a href="#" class="card-link"><i class="far fa-thumbs-up"></i> Like</a>
+              <a href="#" class="card-link"><i class="far fa-comment"></i> Comment</a>
+              <a href="#" class="card-link"><i class="far fa-share-square"></i> Share</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Another Post -->
+        <div class="feed-card card">
+          <div class="card-body">
+            <div class="post-header">
+              <img src="./hakan.img" alt="Profile Picture">
+              <div>
+                <h5 class="card-title">Hakan Mavi</h5>
+                <p class="card-text"><small class="text-muted">4h ago</small></p>
+              </div>
+            </div>
+            <p class="card-text">Here's another example post with an image.</p>
+            
+            <div class="post-actions mt-3">
+              <a href="#" class="card-link"><i class="far fa-thumbs-up"></i> Like</a>
+              <a href="#" class="card-link"><i class="far fa-comment"></i> Comment</a>
+              <a href="#" class="card-link"><i class="far fa-share-square"></i> Share</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Sidebar -->
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Add to your feed</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Aysun Soylu</a></li>
+              <li><a href="#">Yavuz Soylu</a></li>
+              <li><a href="#">Kerem Aktaş</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <div class="card-body">
+            <h5 class="card-title">People You May Know</h5>
+            <ul class="list-unstyled">
+              <li class="media mb-3">
+                <img src="./merve.img" class="mr-3" style="width: 50%; height: 100%;" alt="...">
+                <div class="media-body">
+                  <h6 class="mt-0 mb-1">Tuğba Arslan</h6>
+                  <button type="button" class="btn btn-sm btn-primary">Connect</button>
+                </div>
+              </li>
+              <li class="media mb-3">
+                <img src="./merve.img" class="mr-3" alt="...">
+                <div class="media-body">
+                  <h6 class="mt-0 mb-1">Merve Haktan</h6>
+                  <button type="button" class="btn btn-sm btn-primary">Connect</button>
+                </div>
+              </li>
+              <li class="media mb-3">
+                <img src="./yavuz.img" class="mr-3" alt="...">
+                <div class="media-body">
+                  <h6 class="mt-0 mb-1">Yavuz Bulut</h6>
+                  <button type="button" class="btn btn-sm btn-primary">Connect</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
