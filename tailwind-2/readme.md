@@ -1,0 +1,2 @@
+# designing a website using tailwind
+A navbar was created for the website using tailwind, then it was divided into the necessary areas, headings, paragraphs and images were added and shaped, and finally the footer section was completed.
