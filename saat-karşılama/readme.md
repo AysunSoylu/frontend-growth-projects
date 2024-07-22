@@ -1,0 +1,2 @@
+# Designing clock and welcome screen using javascript
+By using the features of the java script, a screen was designed where the user would enter his name, and after entering the name, he was presented with a welcome screen. This screen also includes date and time information and is currently working.
